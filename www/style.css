@@ -1,0 +1,147 @@
+body{
+    font-family: Sans-serif;
+    margin:0;
+    padding:0;
+}
+
+#header{
+    position: relative;
+    margin-top:0;
+    margin-bottom: 2em;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1em;
+    width: 100%;
+    background-color: #000;
+    height: 5em;
+    color: #fff;
+    text-align:center;
+    color: #F8F8FF;
+    display:table;
+}
+
+h1{
+    margin:0;
+    font-size: 1.75em;
+    font-weight: bolder;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+h2{
+    font-family: monospace;
+    font-weight: bold;
+    color: #271F18;
+    font-size: 1.2em;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.container{
+    width: 350px;
+    margin:auto;
+    padding:0;
+}
+
+.app{
+    position: relative;
+    margin:auto;
+    width: 350px;
+    padding: 1em 2.5em 2em 2.5em;
+    border: 2px solid #271F18;
+    border-radius: 1.5em;
+    outline: none;
+    background-color: hsl(0,0%,95%);
+    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+    transition: color .2s;
+}
+
+.clear{ clear: both;}
+
+#history{
+    position: relative;
+    height:350px;
+    width: 100%;
+    margin: 7px 0 0 0;
+    background: #F8F8FF;
+    padding: 0;
+    color: #000;
+    border-top: 1px groove #ccc;
+    border-right: 1px groove #ccc;
+    border-left: 1px groove #ccc;
+    border-color: #ccc;
+    0 2px;
+    overflow-y: auto;
+}
+
+#clearHistory{
+    float: right;
+}
+
+textarea.form-control{
+  height: 100%;
+}
+
+#sendButton{ float : right;} 
+
+#predOutput1, #predOutput2, #predOutput3{
+    position: relative;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    float: left;
+    width: 5.5em;
+    border: 0;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #595959;
+}
+
+.send{
+    position: relative;
+    width: 100%;
+    margin-left:0.1em;
+    padding:0;
+}
+
+#predictions{
+    position: relative;
+    background: #e6e6e6;
+    height: 35px;
+    padding-left: 1em;
+    border-bottom: 1px groove #ccc;
+    border-right: 1px groove #ccc;
+    border-left: 1px groove #ccc;
+    border-color: #ccc;
+}
+
+#predOutput1:hover, #predOutput2:hover, #predOutput3:hover{
+    color: #1E90FF;
+    cursor: pointer;
+}
+
+.predClicked{
+    background: #fff;
+}
+
+.line{
+    margin: 0;
+    padding: 5px 5px 5px 40px;
+    border-bottom: 2px solid #F8F8FF;
+    background-image: url('msg.png');
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: bottom top;
+    background-color: #dceffb;
+    color: #595959;
+}
+
+#clearButton{ 
+    float: right; 
+    margin-bottom: 0.1em;
+}

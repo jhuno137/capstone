@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        {{ headContent() }}
+        {{ bootstrapLib() }}
+        <link rel="stylesheet" media="screen" href="style.css"/>
+        <title>Next Word Prediction - Stupid Backoff </title>
+    </head>
+    <body>
+        <div id="header" class="center-block">
+            <h1>Next word prediction with R</h1>
+        </div>
+        <div class="container">
+        <div class="app row center-block">
+            <h2>PredictR - Capstone Project</h2>
+            <button id="clearButton" type="button" class="btn btn-default action-button shiny-bound-input">
+                <span class="glyphicon glyphicon-fire"></span>
+            </button>
+            <div class="clear"></div>
+            {{ htmlOutput("history") }}
+            <div class="clear"></div>
+            <div id="predictions">
+            {{ textOutput("predOutput1") }}
+            {{ textOutput("predOutput2") }}
+            {{ textOutput("predOutput3") }}
+            </div>
+            <div class="input-group row clear send">
+                <input type="text" id=userInput class="form-control shiny-bound-input" placeholder="Type a message">
+                <span class="input-group-btn">
+                    <button id="sendButton" class="btn btn-default action-button shiny-bound-input" type="button">
+                        <span class="glyphicon glyphicon-send"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
