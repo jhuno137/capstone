@@ -99,6 +99,13 @@ textarea.form-control{
     height: 25px;
     text-align: center;
     font-weight: bold;
+}
+
+#predOutput2{
+    color: #1E90FF;
+}
+
+#predOutput1, #predOutput3{
     color: #595959;
 }
 
@@ -121,7 +128,6 @@ textarea.form-control{
 }
 
 #predOutput1:hover, #predOutput2:hover, #predOutput3:hover{
-    color: #1E90FF;
     cursor: pointer;
 }
 
