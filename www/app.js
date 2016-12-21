@@ -1,9 +1,6 @@
-$(function() {
-    
-    function htmlEntities(str) {
-        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-    }
-    
+$(function(){
+    // init: focus on text input 
+    $("#userInput").focus();
     // when the send button is clicked clear the text input
     $("#sendButton").on('click',function(){
         $("#userInput").val('');
@@ -26,7 +23,7 @@ $(function() {
         $("#userInput").focus();
       }
     });
-    
+    // clear user history action button
     $("#clearButton").on('click',function(e){
         e.preventDefault();
         $("#history").text("");
